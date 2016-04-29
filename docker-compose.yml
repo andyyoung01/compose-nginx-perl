@@ -1,0 +1,8 @@
+nginx_server: 
+  image: andyyoung01/nginx-fastcgi
+  links:
+    - perl_fastcgi_server:fastcgi-server
+  ports:
+    - 80:80 
+perl_fastcgi_server: 
+  image: andyyoung01/perl-fastcgi
