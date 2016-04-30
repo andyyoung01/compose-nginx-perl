@@ -3,6 +3,6 @@ nginx_server:
   links:
     - perl_fastcgi_server:fastcgi-server
   ports:
-    - 80:80 
+    - 443:443 
 perl_fastcgi_server: 
   image: andyyoung01/perl-fastcgi
